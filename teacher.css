@@ -1,0 +1,20 @@
+nav, ul{
+    list-style:none;
+    background:black;
+    overflow:hidden;   
+}
+a{
+    float:left;
+    display:inline;
+    padding:15px 16px;
+    margin:0px 150px 0px 200px;
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    background-color:gray;
+}
+img{
+    margin:150px 0px 0px 650px;
+    text-align:center;
+}

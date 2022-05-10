@@ -1,0 +1,14 @@
+body{
+    background-color:pink;
+}
+div{
+    margin:250px 0px 0px 0px;
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:bisque;
+}

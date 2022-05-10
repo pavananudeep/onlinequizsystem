@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+        <link href="admin.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="admin.html" id="admin">Admin</a></li>
+                <li><a href="" onclick="add()">Add</a></li>
+                <li><a href="" onclick="remove()">Remove</a></li>
+                <li><a href="" onclick="modify()">Modify</a></li>
+            </ul>
+        </nav>
+        <img src="admin.jpg" alt="admin" width="250px" height="250px">
+        <script>
+            var a=document.getElementById("admin");
+            a.innerHTML="Hello"+" A1";
+            function add(){
+                alert("Cannot add");
+            }
+            function remove(){
+                alert("connot remove");
+            }
+            function modify(){
+                alert("cannot modify");
+            }
+        </script>
+    </body>
+</html>

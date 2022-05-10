@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link href="newuser.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <img src="user.png" alt="user" width="150px" height="150px">
+            <form method="post" action="/login">
+                <input id="username" type="text" placeholder="Create UserId" required>
+                <p></p>
+                <input id="password" type="password" placeholder="Create Password" required>
+                <p></p>
+                <input id="password1" type="password" placeholder="Confirm Password" required>
+                <p></p>
+                <input type="button" value="Submit" onclick="validate()">
+            </form>
+        </div>
+        <script>
+            function validate(){
+                var a=document.getElementById("username").value;
+                var b=document.getElementById("password").value;
+                var c=document.getElementById("password1").value;
+                var e=["S1","A1","T1"];
+                console.log(a);
+                console.log(e.includes(a));
+                if(e.includes(a)){
+                    alert("Userid is already existed");
+                }else{
+                    if(b===c){
+                        alert("Account created");
+                    }else{
+                        alert("Password not matches");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

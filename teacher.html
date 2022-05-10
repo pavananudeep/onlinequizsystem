@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher</title>
+        <link href="teacher.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="teacher.html" id="teacher">Teacher</a></li>
+                <li><a href="" onclick="quiz()">Create Quiz</a></li>
+                <li><a href="" onclick="quiz1()">Quiz History</a></li>
+            </ul>
+        </nav>
+        <img src="teacher.png" alt="teacher" width="250px" height="250px">
+        <script>
+            var a=document.getElementById("teacher");
+            a.innerHTML="Hello"+" T1";
+            function quiz(){
+                alert("Cannot create quiz");
+            }
+            function quiz1(){
+                alert("Quiz1 is created on 04-05-2022 10:00 AM\nQuiz2 is created on 04-05-2022 11:00 AM");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="login.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <img src="user.png" alt="user" width="150px" height="150px">
+            <form>
+                <input type="text" id="username" placeholder="UserId">
+                <p></p>
+                <input type="password" id="password" placeholder="Password">
+                <p></p>
+                <input type="button" value="Submit" onclick="validate()">
+                <p></p>
+                <a href="newuser.html">New User</a>
+            </form>
+            <script>
+                function validate(){
+                    var a=document.getElementById("username").value;
+                    var b=document.getElementById("password").value;
+                    if(a==="S1" && b==="s1" || a==="T1" && b==="t1" || a==="A1" && b==="a1"){
+                        if(a==="S1"){
+                            document.location.href="student.html";
+                        }else if(a==="T1"){
+                            document.location.href="teacher.html";
+                        }else{
+                            document.location.href="admin.html";
+                        }
+                    }else{
+                        window.alert("Invalid credentias");
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
